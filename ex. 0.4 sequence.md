@@ -10,8 +10,6 @@ sequenceDiagram
     server-->>browser: HTTP 302 Found redirect to https://studies.cs.helsinki.fi/exampleapp/notes
     deactivate server
 
-    Note right of browser: The request was successful and the server responds with HTTP status code 302.This is a redirect that tells the browser to make a new GET request to the page defined in the response headers. Location: /exampleapp/notes
-
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     Note right of browser: The browser follows the redirect
     activate server
