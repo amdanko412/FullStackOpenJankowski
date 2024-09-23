@@ -1,3 +1,4 @@
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -33,5 +34,5 @@ sequenceDiagram
     activate server
     server-->>browser: [{ content: "teeeeeeeeesssssssssttttttttttt", date: "2024-09-23T10:54:43.490Z" }, ... ]
     deactivate server
-
+```
     Note right of browser: The browser executes the callback function that renders the notes, including the new note
